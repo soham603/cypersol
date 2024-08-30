@@ -1,0 +1,78 @@
+.input-box {
+    position: relative;
+    display: flex; /* Use flex to align items in a row */
+    align-items: center; /* Vertically center the items */
+    height: 50px;
+    max-width: 400px;
+    width: 100%;
+    background: #f8f8f8; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+    margin-top: 2%;
+    margin-left: 11%;
+    box-sizing: border-box;
+    border: 1px dotted black;
+  }
+  
+  .input-box i {
+    font-size: 20px;
+    color: #707070;
+    margin-right: 10px; /* Space between icon and input */
+  }
+  
+  .input-box input {
+    flex: 1; /* Allow input to take remaining space */
+    outline: none;
+    font-size: 16px;
+    border: none;
+    padding: 0 10px;
+    background-color: transparent;
+  }
+  
+  .input-box .button {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    display: none;
+  }
+  
+ 
+  .input-box input::placeholder {
+    color: #707070; /* Placeholder text color */
+    font-size: 16px; /* Placeholder font size */
+  }
+  
+
+  .input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 500px) {
+    .input-box {
+      height: 50px; /* Maintain height on smaller screens */
+      margin: 0 20px; /* Adjust margin for small screens */
+    }
+    .input-box input {
+      padding: 0 60px; /* Adjust padding */
+    }
+    .input-box .button {
+      right: 15px; /* Adjust right position */
+      font-size: 12px; /* Adjust font size */
+      padding: 6px 14px; /* Adjust padding */
+    }
+  }
+  
+
+  .allproduct-main{
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+  }
+
+  
